@@ -60,5 +60,29 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
+# env file
+```bash
+BKASH_SANDBOX=true  #for production use false
 
+BKASH_APP_KEY=""
+BKASH_APP_SECRET=""
+BKASH_USERNAME=""
+BKASH_PASSWORD=""
+
+#for multi account
+BKASH_APP_KEY_2=""
+BKASH_APP_SECRET_2=""
+BKASH_USERNAME_2=""
+BKASH_PASSWORD_2=""
+
+#so on just use _number likes _3, _4, _5
+
+BKASH_CALLBACK_URL=""
+```
+
+# Installation
+```bash
+composer require karim007/laravel-bkash-tokenize
+php artisan vendor:publish --provider="Karim007\LaravelBkashTokenize\BkashTokenizeServiceProvider" --tag="config"
+```
 
